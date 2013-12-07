@@ -58,19 +58,6 @@ Scaling:
   Min: 1
   Max: 10
 Endpoints:
-  - Private-IP-Name:     IP
-    Private-Port-Name:   HTTP_PORT
-    Private-Port:        8080
-    Public-Port-Name:    HTTP_PROXY_PORT
-    WebSocket-Port-Name: WEBSOCKET_PORT
-    WebSocket-Port:      8676
-    Mappings:
-      - Frontend:      ""
-        Backend:       ""
-        Options:       { "websocket": 1}
-      - Frontend:      "/health"
-        Backend:       ""
-        Options:       { health: true }
   - Private-IP-Name:   IP
     Private-Port-Name: CLUSTER_PORT
     Private-Port:      7600
