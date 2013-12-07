@@ -4,9 +4,3 @@ case "$1" in
   -v|--version)
     version="$2"
 esac
-
-cp -r ${OPENSHIFT_INFINISPAN_DIR}/versions/${version}/template/* ${OPENSHIFT_INFINISPAN_DIR}/template
-cp -r ${OPENSHIFT_INFINISPAN_DIR}/versions/${version}/template/.openshift ${OPENSHIFT_INFINISPAN_DIR}/template
-
-echo "$version" > "$OPENSHIFT_INFINISPAN_DIR/env/OPENSHIFT_INFINISPAN_VERSION"
-
